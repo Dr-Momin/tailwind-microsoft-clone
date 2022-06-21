@@ -11,18 +11,46 @@
 
     <div class="navbar flex justify-between items-center">
 
-        <div class="hamburger p-4 cursor-pointer">
-            <div class="line h-0.5 w-6 my-1 bg-black"></div>
-            <div class="line h-0.5 w-6 my-1 bg-black"></div>
-            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        <div class="flex justify-center items-center md:order-2">
+            <div class="hamburger p-4 cursor-pointer md:hidden ">
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            </div>
+            <div class="search md:hidden">Search Icon</div>
         </div>
 
 
-        <div class="logo text-center">Microsoft</div>
-        <div class="cart text-center">Cart Account</div>
+
+        <div class="logo text-center md:order-1 flex ">
+            <div>Microsoft</div>
+            <div class="features inset-0 md:flex space-x-2 mx-8 hidden sm:hidden md:inline-block">
+                <div class="fitem">Microsoft 365</div>
+                <div class="fitem">Office</div>
+                <div class="fitem">Windows</div>
+                <div class="fitem">Surface</div>
+                <div class="fitem">Xbox</div>
+                <div class="fitem">Support</div>
+            </div>
+        </div>
+        <div class="cart text-center px-3 md:order-3 flex">
+            <div class="search hidden md:block">SearchIcon</div>
+            <div>
+                Cart Account
+            </div>
+        </div>
+
+
 
     </div>
 
+
+    <div class="slider flex flex-col-reverse md:flex-row bg-gray-400">
+        <div class="left"></div>
+        <div class="right">
+            <img src="" alt="">
+        </div>
+    </div>
 
 </body>
 </html>
